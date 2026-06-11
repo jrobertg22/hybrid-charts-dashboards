@@ -1,4 +1,4 @@
-# Interactive Analytics Dashboard Core
+# Hybrid Charts Dashboards Core
 
 Ejemplos de Dashboards con **Google Charts** y **D3.js**. Usando una arquitectura híbrida de renderizado , consumiendo datos estructurados en formato JSON local de manera asíncrona.
 
@@ -6,10 +6,10 @@ Ejemplos de Dashboards con **Google Charts** y **D3.js**. Usando una arquitectur
 
 ## 🚀 Características Principales
 
-* **Arquitectura Híbrida:** Implementación paralela de Google Charts (paquete `corechart` para Pie, Bar y Bubble charts) junto con manipulación nativa del DOM de SVG mediante D3.js.
+* **Arquitectura Híbrida:** Implementación paralela y limpia de Google Charts (paquete `corechart` para Pie, Bar y Bubble charts) junto con manipulación nativa del DOM de SVG mediante D3.js.
 * **Consumo Asíncrono Seguro:** Flujo de datos basado en Fetch API asíncrono (`try/catch`) con sanitización y tipado explícito de datos en tiempo de ejecución.
-* **Estética Dark Ejecutiva:** Paleta de colores optimizada para entornos corporativos de alta concentración, garantizando contraste y accesibilidad.
-* **Live Reloading:** Configuración de entorno local ágil sin necesidad de empaquetadores complejos o compilaciones pesadas.
+* **Estética Ejecutiva Profunda:** Paleta de colores oscuros corporativos optimizada para entornos de alta concentración, garantizando contraste y legibilidad.
+* **Live Reloading:** Configuración de entorno local ágil sin necesidad de empaquetadores complejos o compilaciones pesadas mediante soporte nativo de módulos ES6.
 
 ---
 
@@ -24,10 +24,32 @@ Antes de clonar e inicializar el proyecto, asegúrate de tener instalado en tu e
 
 ## 🔧 Instalación y Despliegue Local
 
-Sigue estos pasos detallados desde tu terminal para clonar el repositorio y levantar el servidor de desarrollo en Visual Studio Code:
+Sigue estos pasos detallados desde la terminal para clonar el proyecto oficial y levantar el servidor de desarrollo:
 
-### 1. Clonar el Repositorio
-Clona el proyecto desde GitHub hacia tu máquina local e ingresa al directorio raíz:
-```bash
-git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/TU_USUARIO/TU_REPOSITORIO.git)
-cd analytics-dashboard-core
+1. **Abre VS Code.**
+
+2. **Abre la terminal integrada:** Puedes hacerlo con el atajo de teclado **`Ctrl + \``** (en Windows/Linux) o **`Cmd + \``** (en Mac), o dirigiéndote al menú superior: **Terminal > New Terminal**.
+
+3. **Navega hasta la carpeta de tus proyectos:** Usa el comando `cd` para posicionarte en tu directorio de trabajo. Por ejemplo:
+   
+   cd Documents/MisProyectos
+
+4. Clona el repositorio oficial: Ejecuta el comando de Git para descargar el código fuente en tu máquina:
+
+    git clone [https://github.com/jrobertg22/hybrid-charts-dashboards.git](https://github.com/jrobertg22/hybrid-charts-dashboards.git)
+
+5. Accede al directorio del proyecto: Entra a la carpeta exacta que se acaba de crear:
+   
+    cd hybrid-charts-dashboards
+
+6. Instala las dependencias del servidor: Descarga los módulos necesarios (lite-server) para compilar los gráficos e iniciar el entorno local:
+   
+    npm install
+
+7. Despliega el servidor de desarrollo: Levanta la aplicación con soporte de recarga en vivo e inicializa la interfaz:
+    
+    npm run dev
+
+8. Una vez levantado el servicio, la terminal te mostrará los accesos de red. Abre tu navegador web e ingresa a:
+
+    Local URL: http://localhost:3000
