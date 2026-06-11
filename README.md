@@ -53,3 +53,16 @@ Sigue estos pasos detallados desde la terminal para clonar el proyecto oficial y
 8. Una vez levantado el servicio, la terminal te mostrará los accesos de red. Abre tu navegador web e ingresa a:
 
     Local URL: http://localhost:3000
+
+📁 Estructura del Proyecto
+
+El repositorio mantiene un desacoplamiento estricto entre la lógica de renderizado y el origen de datos:
+
+hybrid-charts-dashboards/
+├── data/
+│   └── datos.json      # Dataset plano con las métricas de rendimiento (Origen de Datos)
+├── src/
+│   └── main.js         # Orquestador asíncrono y lógica de gráficos (D3 / Google Charts)
+├── index.html          # Interfaz de usuario base y estilos CSS corporativos
+├── package.json        # Manifiesto de dependencias y scripts de Node.js
+└── .gitignore          # Archivo de exclusión de artefactos para Git
