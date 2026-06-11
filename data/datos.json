@@ -1,0 +1,7 @@
+[
+  { "category": "Infraestructura", "value": 85, "growth": 12 },
+  { "category": "Seguridad", "value": 92, "growth": 8 },
+  { "category": "Despliegue", "value": 78, "growth": 15 },
+  { "category": "Monitoreo", "value": 64, "growth": 22 },
+  { "category": "Optimización", "value": 73, "growth": 5 }
+]
